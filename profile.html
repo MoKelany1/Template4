@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <!-- Start Navbar -->
+    <div class="nav">
+        <div class="logo"><span>Elzero</span></div>
+        <ul>
+            <li title="Dashboard"><a href="index.html"><i class="fa-solid fa-bars-staggered"></i><span>Dashboard</span></a></li>
+            <li title="Settings"><a href="settings.html"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+            <li class="active"  title="Profile"><a href="profile.html"><i class="fa-regular fa-user"></i><span>Profile</span></a></li>
+            <li title="Projects"><a href="projects.html"><i class="fa-solid fa-diagram-project"></i><span>Projects</span></a></li>
+            <li title="Courses"><a href="courses.html"><i class="fa-solid fa-graduation-cap"></i><span>Courses</span></a></li>
+            <li title="Friends"><a href="friends.html"><i class="fa-regular fa-circle-user"></i><span>Friends</span></a></li>
+            <li title="Files"><a href="files.html"><i class="fa-regular fa-file"></i><span>Files</span></a></li>
+            <li title="Plans"><a href="plans.html"><i class="fa-regular fa-credit-card"></i><span>Plans</span></a></li>
+        </ul>
+    </div>
+    <!-- End Navbar -->
+    <!-- Start Header -->
+    <div class="header">
+            <form action="">
+                <div>
+                    <input type="submit" id="submit">
+                    <label for="submit"><i class="fa-solid fa-magnifying-glass" title="Search"></i></label>
+                </div>
+                <input type="text" name="search" placeholder="Search Keyword">
+            </form>
+            <div class="account">
+                <i class="fa-regular fa-bell"></i>
+                <img src="imgs/profile.png" alt="">
+            </div>
+    </div>
+    <!-- End Header -->
+    <!-- Start Profile -->
+    <div class="profile main">
+        <h2 class="main-title">Profile</h2>
+        <div class="content">
+            <div class="profile-control">
+                <div class="image">
+                    <img src="imgs/profile.png" alt="">
+                    <p class="name w-bold">Osama Elzero</p>
+                    <p class="level p-light">Level 19</p>
+                    <div class="progress"><span style="width: 80%;"></span></div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="rating"><span>450</span> Rating</div>
+                </div>
+                <div class="control">
+                    <div class="general">
+                        <p class="p-light">General Information</p>
+                        <div class="info">
+                            <p class="full">Full Name: <span class="w-bold">Osama Mohamed</span></p>
+                            <p class="gender">Gender: <span class="w-bold">Male</span></p>
+                            <p class="country">Country: <span class="w-bold">Country</span></p>
+                        </div>
+                        <input type="checkbox" class="slide-check" id="general">
+                        <label for="general"></label>
+                    </div>
+                    <div class="personal">
+                        <p class="p-light">Personal Information</p>
+                        <div class="info">
+                            <p class="email">Email: <span class="w-bold">O@nn.sa</span></p>
+                            <p class="phone">Phone: <span class="w-bold">019123456789</span></p>
+                            <p class="birth">Date Of Birth: <span class="w-bold">25/10/1982</span></p>
+                        </div>
+                        <input type="checkbox" class="slide-check" id="personal">
+                        <label for="personal"></label>
+                    </div>
+                    <div class="job">
+                        <p class="p-light">Job Information</p>
+                        <div class="info">
+                            <p class="title">Title: <span class="w-bold">Full Stack Developer</span></p>
+                            <p class="language">Programming Language: <span class="w-bold">Python</span></p>
+                            <p class="experience">Years Of Experience: <span class="w-bold">15+</span></p>
+                        </div>
+                        <input type="checkbox" class="slide-check" id="job">
+                        <label for="job"></label>
+                    </div>
+                    <div class="billing">
+                        <p class="p-light">Billing Information</p>
+                        <div class="info">
+                            <p class="method">Payment Method: <span class="w-bold">Paypal</span></p>
+                            <p class="bill-email">Email: <span class="w-bold">email@website.com</span></p>
+                            <p class="subscribtion">Subscribtion: <span class="w-bold">Monthly</span></p>
+                        </div>
+                        <input type="checkbox" class="slide-check" id="bill">
+                        <label for="bill"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="my-skills">
+                <h3>My Skills</h3>
+                <p class="p-light p-head">Completed Skills List</p>
+                <div class="row">
+                    <span>HTML</span>
+                    <span>Pugjs</span>
+                    <span>HAML</span>
+                </div>
+                <div class="row">
+                    <span>CSS</span>
+                    <span>SASS</span>
+                    <span>Stylus</span>
+                </div>
+                <div class="row">
+                    <span>JavaScript</span>
+                    <span>TypeScript</span>
+                </div>
+                <div class="row">
+                    <span>Vuejs</span>
+                    <span>Reactjs</span>
+                </div>
+                <div class="row">
+                    <span>jest</span>
+                    <span>jasmine</span>
+                </div>
+                <div class="row">
+                    <span>PHP</span>
+                    <span>Laravel</span>
+                </div>
+                <div class="row">
+                    <span>Python</span>
+                    <span>Django</span>
+                </div>
+            </div>
+            <div class="latest-activities">
+                <h3>Latest Activities</h3>
+                <p class="p-light p-head">Latest Activities Done By The User</p>
+                <div class="activity store">
+                    <img src="imgs/store.png" alt="">
+                    <div class="info">
+                        <div class="place">
+                            <p class="place w-bold">Store</p>
+                            <p class="state p-light">Bought The Mastering Python Course</p>
+                        </div>
+                        <div class="time">
+                            <div class="clock">18:05</div>
+                            <div class="day p-light">Yesterday</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity academy">
+                    <img src="imgs/certificate.png" alt="">
+                    <div class="info">
+                        <div class="place">
+                            <p class="place w-bold">Academy</p>
+                            <p class="state p-light">Got The PHP Certificate</p>
+                        </div>
+                        <div class="time">
+                            <div class="clock">16:05</div>
+                            <div class="day p-light">Yesterday</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity badges">
+                    <img src="imgs/check.png" alt="">
+                    <div class="info">
+                        <div class="place">
+                            <p class="place w-bold">Badges</p>
+                            <p class="state p-light">Unlocked The 10 Skills Badge</p>
+                        </div>
+                        <div class="time">
+                            <div class="clock">18:05</div>
+                            <div class="day p-light">Yesterday</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity store">
+                    <img src="imgs/store.png" alt="">
+                    <div class="info">
+                        <div class="place">
+                            <p class="place w-bold">Store</p>
+                            <p class="state p-light">Bought The Typescript Course</p>
+                        </div>
+                        <div class="time">
+                            <div class="clock">12:05</div>
+                            <div class="day p-light">Yesterday</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Profile -->
+    <script src="js/main.js"></script>
+</body>
+</html>

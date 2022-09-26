@@ -1,0 +1,101 @@
+.projects .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.projects .content .box{
+    background-color: white;
+    border-radius: 10px;
+    max-height: 305px;
+    padding: 20px;
+    position: relative;
+}
+.projects .content .box::before{
+    content: attr(date);
+    position: absolute;
+    right: 13px;
+    top: 10px;
+    color: var(--background-color);
+    color: #9b9292;
+    font-size: 14px;
+}
+.projects .content .box h3{
+    margin-bottom: 20px;
+}
+.projects .content .box .p-head{
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+.projects .content .box .images{
+    margin-bottom: 10px;
+}
+.projects .content .box .images img{
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: relative;
+    cursor: pointer;
+}
+.projects .content .box .images img:hover{
+    z-index: 300;
+}
+.projects .content .box .images img:nth-child(2){
+    transform: translateX(-15px);
+}
+.projects .content .box .images img:nth-child(3){
+    transform: translateX(-30px);
+}
+.projects .content .box .images img:nth-child(4){
+    transform: translateX(-45px);
+}
+.projects .content .box .images img:nth-child(5){
+    transform: translateX(-60px);
+}
+.projects .content .box .about{
+    padding: 20px 0;
+    border-width: 1px 0;
+    border-color: var(--background-color);
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.projects .content .box .about span{
+    display: block;
+    background-color: var(--background-color);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 2px;
+    font-size: 13px;
+}
+.projects .content .box .progress{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.projects .content .box .progress .line{
+    flex: .7;
+    background-color: var(--background-color);
+    height: 6px;
+    border-radius: 2px;
+}
+.projects .content .box .progress .line span{
+    display: block;
+    width: 50%;
+    height: 100%;
+    border-radius: 2px;
+}
+.projects .content .box .progress .line .low{
+    background-color: #F53831;
+}
+.projects .content .box .progress .line .mid{
+    background-color: #18BB57;
+}
+.projects .content .box .progress .line .high{
+    background-color: #006DF9;
+}
+.projects .content .box .progress .price{
+    flex: .1;
+}

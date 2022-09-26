@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <!-- Start Navbar -->
+    <div class="nav">
+        <div class="logo"><span>Elzero</span></div>
+        <ul>
+            <li title="Dashboard"><a href="index.html"><i class="fa-solid fa-bars-staggered"></i><span>Dashboard</span></a></li>
+            <li class="active" title="Settings"><a href="settings.html"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+            <li title="Profile"><a href="profile.html"><i class="fa-regular fa-user"></i><span>Profile</span></a></li>
+            <li title="Projects"><a href="projects.html"><i class="fa-solid fa-diagram-project"></i><span>Projects</span></a></li>
+            <li title="Courses"><a href="courses.html"><i class="fa-solid fa-graduation-cap"></i><span>Courses</span></a></li>
+            <li title="Friends"><a href="friends.html"><i class="fa-regular fa-circle-user"></i><span>Friends</span></a></li>
+            <li title="Files"><a href="files.html"><i class="fa-regular fa-file"></i><span>Files</span></a></li>
+            <li title="Plans"><a href="plans.html"><i class="fa-regular fa-credit-card"></i><span>Plans</span></a></li>
+        </ul>
+    </div>
+    <!-- End Navbar -->
+    <!-- Start Header -->
+    <div class="header">
+            <form action="">
+                <div>
+                    <input type="submit" id="submit">
+                    <label for="submit"><i class="fa-solid fa-magnifying-glass" title="Search"></i></label>
+                </div>
+                <input type="text" name="search" placeholder="Search Keyword">
+            </form>
+            <div class="account">
+                <i class="fa-regular fa-bell"></i>
+                <img src="imgs/profile.png" alt="">
+            </div>
+    </div>
+    <!-- End Header -->
+    <!-- Start Settings -->
+    <div class="settings main">
+        <h2 class="main-title">Settings</h2>
+        <div class="content">
+            <div class="box site">
+                <h3>Site Control</h3>
+                <p class="p-light p-head">Control The Website If There Is A Maintainence</p>
+                <div class="control">
+                    <div class="text">
+                        <p class="w-bold">Website Control</p>
+                        <p class="p-light">Open/Close Website And Type Reason</p>
+                    </div>
+                    <input type="checkbox" id="siteCheck" class="slide-check">
+                    <label for="siteCheck"></label>
+                </div>
+                <div class="message">
+                    <textarea name="message" placeholder="Close Message Content"></textarea>
+                </div>
+            </div>
+            <div class="box general-info">
+                <h3>General Info</h3>
+                <p class="p-light p-head">General Information About Your Account</p>
+                <form action="">
+                    <div class="first">
+                        <p>First Name</p>
+                        <input type="text" name="first" placeholder="First Name">
+                    </div>
+                    <div class="last">
+                        <p>Last Name</p>
+                        <input type="text" name="last" placeholder="Last Name">
+                    </div>
+                    <div class="email">
+                        <p>Email</p>
+                        <div class="inputs">
+                            <input type="email" name="email" placeholder="o@nn.sa">
+                            <input type="submit" value="Change">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="box security-info">
+                <h3>Security Info</h3>
+                <p class="p-light p-head">Security Information About Your Account</p>
+                <div class="pass">
+                    <div class="text">
+                        <p class="w-bold">Password</p>
+                        <p class="p-light">Last Change On <span>25/10/2021</span></p>
+                    </div>
+                    <a href="#" class="c-white bg-blue">Change</a>
+                </div>
+                <div class="auth">
+                    <div class="text">
+                        <p class="w-bold">Two-Factor Autherntication</p>
+                        <p class="p-light">Enable/Disable The Feature</p>
+                    </div>
+                    <input type="checkbox" id="authCheck" class="slide-check">
+                    <label for="authCheck"></label>
+                </div>
+                <div class="devices">
+                    <div class="text">
+                        <p class="w-bold">Devices</p>
+                        <p class="p-light">Check The Login Devices List</p>
+                    </div>
+                    <a href="#" class="c-black bg-back">Devices</a>
+                </div>
+            </div>
+            <div class="box social-info">
+                <h3>Social Info</h3>
+                <p class="p-light p-head">Social Media Information</p>
+                <div class="twitter">
+                    <i class="fa-brands fa-twitter"></i><span>Twitter Username</span>
+                </div>
+                <div class="facebook">
+                    <i class="fa-brands fa-facebook-f"></i><span>Facebook Username</span>
+                </div>
+                <div class="linkedin">
+                    <i class="fa-brands fa-linkedin"></i><span>Linkedin Username</span>
+                </div>
+                <div class="youtube">
+                    <i class="fa-brands fa-youtube"></i><span>Yotube Username</span>
+                </div>
+            </div>
+            <div class="box widgets-control">
+                <h3>Widgets Control</h3>
+                <p class="p-light p-head">Hide/Show Website Widgets</p>
+                <div class="widget">
+                    <i class="fa-solid fa-check"></i>
+                    <input type="checkbox" id="draft">
+                    <label for="draft"></label>
+                    <p>Quick Drafts</p>
+                </div>
+                <div class="widget">
+                    <i class="fa-solid fa-check"></i>
+                    <input type="checkbox" id="targets">
+                    <label for="targets"></label>
+                    <p>Yearly Targets</p>
+                </div>
+                <div class="widget">
+                    <i class="fa-solid fa-check"></i>
+                    <input type="checkbox" id="stats">
+                    <label for="stats"></label>
+                    <p>Tickets Statistics</p>
+                </div>
+                <div class="widget">
+                    <i class="fa-solid fa-check"></i>
+                    <input type="checkbox" id="news">
+                    <label for="news"></label>
+                    <p>Latest News</p>
+                </div>
+                <div class="widget">
+                    <i class="fa-solid fa-check"></i>
+                    <input type="checkbox" id="tasks">
+                    <label for="tasks"></label>
+                    <p>Latest Tasks</p>
+                </div>
+                <div class="widget">
+                    <i class="fa-solid fa-check"></i>
+                    <input type="checkbox" id="search">
+                    <label for="search"></label>
+                    <p>Top Search Items</p>
+                </div>
+            </div>
+            <div class="box backup-manager">
+                <h3>Backup Manager</h3>
+                <p class="p-light p-head">Control Backup Date And Location</p>
+                <div class="time">
+                    <div class="daily">
+                        <input type="radio" name="time" value="daily" id="day">
+                        <label for="day"></label>
+                        <p>Daily</p>
+                    </div>
+                    <div class="weekly">
+                        <input type="radio" name="time" value="weekly" id="week">
+                        <label for="week"></label>
+                        <p>Weekly</p>
+                    </div>
+                    <div class="monthly">
+                        <input type="radio" name="time" value="monthly" id="month">
+                        <label for="month"></label>
+                        <p>Monthly</p>
+                    </div>
+                </div>
+                <div class="storage">
+                    <div class="megaman">
+                        <input type="radio" name="storage" value="megaman" id="megaman">
+                        <label for="megaman">
+                            <i class="fa-solid fa-server"></i>
+                            <p>Megaman</p>
+                        </label>
+                    </div>
+                    <div class="zero">
+                        <input type="radio" name="storage" value="zero" id="zero">
+                        <label for="zero">
+                            <i class="fa-solid fa-server"></i>
+                            <p>Zero</p>
+                        </label>
+                    </div>
+                    <div class="sigma">
+                        <input type="radio" name="storage" value="sigma" id="sigma">
+                        <label for="sigma">
+                            <i class="fa-solid fa-server"></i>
+                            <p>Sigma</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Settings -->
+    <script src="js/main.js"></script>
+</body>
+</html>

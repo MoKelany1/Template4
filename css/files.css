@@ -1,0 +1,117 @@
+.files-manager .content{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 700px) {
+    .files-manager .content{
+        flex-direction: column-reverse;
+    }
+    .files-manager .files-stats{
+        margin-bottom: 20px;
+    }
+}
+.files-manager .files{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    gap: 15px;
+    flex: .8;
+}
+.files-manager .files .box{
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+.files-manager .files .box:hover i{
+    animation: pop-up 1s;
+}
+.files-manager .files .box i{
+    display: block;
+    color: rgb(119, 114, 114);
+    text-align: left !important;
+    cursor: pointer;
+    width: fit-content;
+}
+.files-manager .files .box img{
+    width: 60px;
+}
+.files-manager .files .box .name{
+    margin-top: 20px;
+}
+.files-manager .files .box .user{
+    margin-top: 10px;
+    text-align: left !important;
+    font-size: 14px;
+}
+.files-manager .files .box .info{
+    margin-top: 10px;
+    padding: 10px 0;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: var(--background-color);
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.files-manager .files-stats{
+    flex: .19;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    height: fit-content;
+    min-width: 300px !important;
+}
+.files-manager .files-stats h3{
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--background-color);
+    margin-bottom: 15px;
+}
+.files-manager .files-stats .stat{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    border: 1px solid var(--background-color);
+    padding: 10px;
+}
+.files-manager .files-stats .stat .image{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+.files-manager .files-stats .stat:nth-of-type(1) .image,
+.files-manager .files-stats .stat:nth-of-type(2) .image{
+    background-color: rgba(0, 0, 255, 0.5) !important;
+    color: rgb(12, 12, 119);
+}
+.files-manager .files-stats .stat:nth-of-type(3) .image{
+    background-color: rgb(209, 56, 56);
+    color: rgb(105, 11, 11);
+}
+.files-manager .files-stats .stat:nth-of-type(4) .image{
+    background-color: rgba(255, 166, 0, 0.5);
+    color: rgb(99, 99, 15);
+}
+.files-manager .files-stats .stat .size{
+    margin-left: auto;
+}
+.files-manager .files-stats .upload{
+    width: fit-content;
+    padding: 10px 10px 10px 30px;
+    margin: 0 auto;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.files-manager .files-stats .upload::before{
+    content: "\f093";
+    font-family: "FontAwesome";
+    position: absolute;
+    left: 9px;
+    top: 10px;
+}

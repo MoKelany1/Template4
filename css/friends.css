@@ -1,0 +1,89 @@
+.friends .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.friends .content .box{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+.friends .box .contact{
+    display: flex;
+}
+.friends .box .contact > div{
+    border-radius: 50%;
+    background-color: var(--background-color);
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+.friends .box .contact > div i{
+    color: #665a5a;
+    font-size: 13px;
+}
+.friends .box img{
+    width: 100px;
+    margin: 0px auto 10px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.friends .box .name{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.friends .box .info{
+    padding: 15px 0;
+    margin: 0 5px;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: var(--background-color);
+    font-size: 14px;
+}
+.friends .box .vip{
+    position: relative;
+}
+.friends .box .vip::before{
+    position: absolute;
+    content: "VIP";
+    color: #F53831;
+    font-size: 50px;
+    right: 0;
+    opacity: .2;
+    font-weight: 400;
+}
+.friends .box .info > div{
+    margin-bottom: 5px;
+}
+.friends .box .info > div i{
+    margin-right: 5px;
+}
+.friends .box .edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+.friends .box .edit span{
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.friends .box .edit a{
+    margin-left: 5px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+.friends .box .edit a:nth-of-type(1){
+    background-color: #006DF9;
+}
+.friends .box .edit a:nth-of-type(2){
+    background-color: #F53831;
+}

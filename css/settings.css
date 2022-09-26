@@ -1,0 +1,295 @@
+/* Start Settings */
+.settings .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.settings .content .box{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+.settings .content .box h3{
+    margin-bottom: 8px;
+}
+.settings .content .box .p-head{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.settings .site .control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.settings .site .control .p-light{
+    font-size: 15px;
+}
+/* .settings .site .control label{
+    width: 60px;
+    height: 23px;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    position: relative;
+    cursor: pointer;
+}
+.settings .site .control label::before{
+    font-family: "FontAwesome";
+    position: absolute;
+    content: '\f00d';
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    font-size: 12px;
+}
+.settings .site .control input{
+    display: none;
+}
+.settings .site .control input:checked + label{
+    background-color: var(--main-color);
+}
+.settings .site .control input:checked + label::before{
+    content: "\f00c";
+    left: 37px;
+    background-color: var(--background-color);
+} */
+.settings .site .control .text .p-light{
+    margin-top: 5px;
+}
+.settings .site .message{
+    margin: 20px 0 5px 0;
+}
+.settings .site .message textarea{
+    width: 100%;
+    resize: none;
+    height: 145px;  
+    padding: 10px;
+    border: none;
+    border: 1px solid rgb(167, 164, 164);
+    border-radius: 8px;
+}
+.settings .general-info form div{
+    margin-bottom: 15px;
+}
+.settings .general-info form div p{
+    margin-bottom: 6px;
+}
+.settings .general-info input{
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    border: 1px solid rgb(194, 194, 207);
+    border-radius: 5px;
+}
+.settings .general-info .email .inputs{
+    display: flex;
+}
+.settings .general-info .email .inputs input[type="email"]{
+    flex: .9;
+    background-color: var(--background-color);
+}
+.settings .general-info .email .inputs input[type="submit"]{
+    flex: .1;
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    color: var(--main-color);
+    cursor: pointer;
+    font-weight: bold;
+}
+.settings .security-info > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.settings .security-info > div .text p:nth-child(1){
+    margin-bottom: 6px;
+}
+.settings .security-info > div a{
+    padding: 10px 15px !important;
+    border-radius: 5px;
+}
+.settings .security-info .auth{
+    margin: 30px 0;
+}
+.settings .security-info > div::before{
+    position: absolute;
+    content: "";
+    width: 108%;
+    height: 2px;
+    background-color: var(--background-color);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 140%;
+}
+.settings .security-info > div:last-child::before{
+    display: none !important;
+}
+.settings .social-info > div{
+    padding: 10px;
+    background-color: var(--background-color);
+    margin-bottom: 18px;
+    color: #828284;
+    border: 1px solid #cbbebe;
+    border-radius: 5px;
+}
+.settings .social-info > div i{
+    margin-right: 10px;
+    width: 15px;
+}
+.settings .social-info > div span{
+    padding-left: 10px;
+    position: relative;
+}
+.settings .social-info > div span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 130%;
+    background-color: #cbbebe;
+    transform: translateY(-50%);
+}
+.settings .widgets-control .widget{
+    display: flex;
+    align-items: center;
+    margin: 17px 0;
+    padding-left: 10px;
+    position: relative;
+}
+.settings .widgets-control .widget i{
+    position: absolute;
+    left: 12px;
+    top: 4px;
+    z-index: 300;
+    font-size: 11px;
+    color: white;
+}
+.settings .widgets-control .widget input{
+    display: none;
+}
+.settings .widgets-control .widget label{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.settings .widgets-control .widget label::before{
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid #b99797;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.settings .widgets-control .widget label::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--main-color);
+    width: 0px;
+    height: 0px;
+    transition: width .5s, height .5s;
+}
+.settings .widgets-control .widget input:checked + label::after{
+    width: 15px;
+    height: 15px;
+}
+.settings .widgets-control .widget p{
+    margin-left: 5px;
+    cursor: pointer;
+}
+.settings .backup-manager .time{
+    margin: 25px 0;
+}
+.settings .backup-manager .time > div{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.settings .backup-manager .time > div label{
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    border-radius: 0.5px solid black;
+    border: 0.5px solid black;
+    overflow: hidden;
+    cursor: pointer;
+}
+.settings .backup-manager .time > div label::before{
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    transform: translate(-50%, -50%);
+    background-color: blue;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    transition: width .5s, height .5s;
+}
+.settings .backup-manager .time > div input{
+    display: none;
+}
+.settings .backup-manager .time > div input:checked + label{
+    border-color: blue;
+}
+.settings .backup-manager .time > div input:checked + label::before{
+    width: 10px;
+    height: 10px;
+}
+.settings .backup-manager .time > div p{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.settings .backup-manager .storage{
+    display: flex;
+    justify-content: center;
+}
+.settings .backup-manager .storage .zero{
+    margin: 0 15px;
+}
+.settings .backup-manager .storage > div label{
+    padding: 15px 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 105px;
+    border: 1px solid;
+    border-color: #d1bbbb;
+    border-radius: 9px;
+    transition: color .5s, border-color .5s;
+    cursor: pointer;
+}
+.settings .backup-manager .storage input{
+    display: none;
+}
+.settings .backup-manager .storage input:checked + label{
+    color: blue;
+    border-color: blue;
+}
+.settings .backup-manager .storage > div label i{
+    margin-bottom: 10px;
+}
+/* End Settings */

@@ -1,0 +1,88 @@
+.plans .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.plans .content .plan{
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+.plans .content .plan .square{
+    padding: 2px;
+    border: 1px solid ;
+}
+.plans .content .plan .square{
+    margin-bottom: 10px;
+}
+.plans .content .plan .info{
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+.plans .content .free .square{
+    border-color: var(--green-color);
+}
+.plans .content .free .square .info{
+    background-color: var(--green-color);
+}
+.plans .content .basic .square{
+    border-color: var(--blue-color);
+}
+.plans .content .basic .square .info{
+    background-color: var(--blue-color);
+}
+.plans .content .premium .square{
+    border-color: var(--yellow-color);
+}
+.plans .content .premium .square .info{
+    background-color: var(--yellow-color);
+}
+.plans .content .plan .info .name{
+    margin-bottom: 5px;
+}
+.plans .content .plan .info > *{
+    width: fit-content;
+    margin: 0 auto;
+}
+.plans .content .plan .features span{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 20px !important;
+    border-bottom: 1px solid var(--background-color);
+    position: relative;
+}
+.plans .content .plan .features span::before{
+    font-family: "FontAwesome";
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.plans .content .plan .features .in::before{
+    content: "\f00c";
+    color: var(--green-color);
+}
+.plans .content .plan .features .out::before{
+    content: "\f00d";
+    color: var(--red-color);
+}
+.plans .content .plan .current{
+    display: none;
+}
+.plans .content .plan a{
+    margin: 15px auto 0;
+    border-radius: 5px !important;
+}
+.plans .content .signed a{
+    display: none !important;
+}
+.plans .content .signed .current{
+    display: block !important;
+    text-align: center;
+}
+.plans .content .plan .current{
+    margin-top: 15px;
+}

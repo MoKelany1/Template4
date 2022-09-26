@@ -1,0 +1,210 @@
+.profile .content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.profile .content > div{
+    background-color: white;
+    border-radius: 10px;
+}
+.profile .profile-control{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+@media (max-width: 667px) {
+    .profile .profile-control{
+        flex-direction: column;
+    }
+}
+.profile .profile-control .image{
+    margin-right: 100px;
+    text-align: center;
+}
+@media (max-width: 667px) {
+    .profile .profile-control .image{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
+.profile .profile-control .image img{
+    width:150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.profile .profile-control .image .name{
+    font-size: 22px;
+}
+.profile .profile-control .image > p{
+    margin-bottom: 10px;
+}
+.profile .profile-control .image .progress{
+    width: 80%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: rgb(196, 187, 187);
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.profile .profile-control .image .progress span{
+    height: 100%;
+    background-color: var(--main-color);
+    display: block;
+    border-radius: 4px;
+}
+.profile .profile-control .image .stars{
+    margin-bottom: 10px;
+}
+.profile .profile-control .image .stars i{
+    color: #FFB83D;
+}
+.profile .profile-control .control{
+    flex: 1;
+    position: relative;
+}
+.profile .profile-control .control::before{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 110%;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--background-color);
+}
+.profile .profile-control .control > div{
+    margin-bottom: 50px;
+    position: relative;
+}
+.profile .profile-control .control > div:not(:last-child):before{
+    position: absolute;
+    content: "";
+    top: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--background-color);
+    width: 109%;
+    height: 2px;
+}
+.profile .profile-control .control > div:last-child{
+    margin-bottom: 0;
+}
+@media (max-width: 667px) {
+    .profile .profile-control .control > div{
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .profile .profile-control .control > div:last-child{
+        margin-bottom: 0;
+    }
+    .profile .profile-control .control > div::before,
+    .profile .profile-control .control::before{
+        display: none;
+    }
+}
+.profile .profile-control .control > div .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+@media (max-width: 1060px) {
+    .profile .profile-control .control > div .info{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+.profile .profile-control .control > div .info > p{
+    width: 230px;
+    font-size: 14px;
+}
+@media (max-width: 1060px) {
+    .profile .profile-control .control > div .info > p{
+        margin: 5px 0;
+    }
+}
+.profile .my-skills{
+    margin-right: 15px;
+}
+.profile .my-skills,
+.profile .latest-activities{
+    padding: 15px;
+    margin-top: 15px;
+    min-width: 333px;
+}
+.profile .my-skills h3,
+.profile .latest-activities h3{
+    margin-bottom: 10px;
+}
+.profile .my-skills .p-head,
+.profile .latest-activities .p-head{
+    margin-bottom: 20px;
+}
+.profile .my-skills .row{
+    padding: 10px 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.profile .my-skills .row:not(:last-child){
+    border-bottom: 1px solid var(--background-color);
+}
+.profile .my-skills .row:last-child{
+    padding-bottom: 10px !important;
+}
+.profile .my-skills .row span{
+    display: block;
+    background-color: var(--background-color);
+    padding: 5px;
+    border-radius: 5px;
+}
+.profile .my-skills .row span:nth-child(2){
+    margin: 0 10px;
+}
+.profile .latest-activities{
+    flex: 1;
+}
+.profile .latest-activities .activity{
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 667px) {
+    .profile .latest-activities .activity{
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}
+.profile .latest-activities .activity:not(:last-child){
+    border-bottom: 1px solid var(--background-color);
+}
+.profile .latest-activities .activity img{
+    width: 56px;
+    margin-right: 10px;
+    padding: 15px 0;
+}
+.profile .latest-activities .activity .info{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile .latest-activities .activity .info .time .clock{
+    text-align: right;
+    margin-bottom: 3px;
+}
+@media (max-width: 667px) {
+    .profile .latest-activities .activity .info{
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile .latest-activities .activity .info .time .clock{
+        text-align: center !important;
+        margin-top: 10px;
+    }
+}
+.profile .latest-activities .activity .info p:first-child{
+    margin-bottom: 5px;
+}
